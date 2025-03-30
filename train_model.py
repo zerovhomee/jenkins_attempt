@@ -32,7 +32,7 @@ def eval_metrics(actual, pred):
 
 
 if __name__ == "__main__":
-    df = pd.read_csv('https://raw.githubusercontent.com/Alexey3250/Start_ML/refs/heads/main/Machine_learning/10_classification/banking.csv', delimiter = ',')
+    df = pd.read_csv("./df_clear.csv", delimiter = ',')
     X,Y, power_trans = scale_frame(df)
     X_train, X_val, y_train, y_val = train_test_split(X, Y,
                                                     test_size=0.3,
